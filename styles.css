@@ -1,48 +1,201 @@
-body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e2e2e2;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+
+header {
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 main {
-    margin-left: 20px;
+  padding: 1.5rem;
 }
 
-h1 {
-    text-align: center;
+/* Navigation */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.navbar ul {
-    lost-style-type: none; /* remove bullet points */
-    margin:0;
-    padding:0;
-    overflow: hidden; /* clear floats */
-    background-color: #333;
-
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.navbar li {
-float: left;  /* float list items to the left    */
-} 
-
-.navbar a {
-    display: block;/* make link fill entire list item */
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:none; /* remove underline from links */
-}
-.navbar a:hover { 
-background-color: #111;/* change background color on hover */
+.nav-list a:hover {
+  text-decoration: underline;
 }
 
-.container {
-  width: 80%;
-  height: 700px;
-  margin: 0 auto;
-  border: 10px solid var(--clr-dark);
+/* Hero */
+
+.hero {
+  text-align: center;
+  margin-top: 2rem;
 }
+
+.hero-images {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-images img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Flex section */
+
+.flex-section {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* About images */
+
+.about-images {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-images img {
+  width: px;
+  height: px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+th {
+  background: #444444;
+  color: white;
+}
+
+/* Form */
+
+form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+}
+
+input, textarea, button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+button {
+  background: #7e7e7e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #bebebe;
+}
+
+/* Gallery */
+
+.gallery {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.gallery {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #000000;
+  color: white;
+  text-align: center;
+}
+
 .item {
-  width: 150px;
-  height: 150px;
+  width: 500px;
+  height: 400px;
+  background-color: #fb7185;
+  padding: 1em;
+  font-weight: 700;
+  color: var(--clr-light);
+  text-align:left;
+  border: 10px solid var(--clr-accent);
+  border-radius: 10px;
+}
+.item 2 {
+  width: 500px;
+  height: 400px;
   background-color: #fb7185;
   padding: 1em;
   font-weight: 700;
@@ -50,16 +203,5 @@ background-color: #111;/* change background color on hover */
   text-align: center;
   border: 10px solid var(--clr-accent);
   border-radius: 10px;
-  
 }
-/* END OF BASE STYLES */
-.container {
-  display: flex;
-  /*flex-direction: column;*/
-  /*justify-content: space-evenly;*/
-  /*align-items: baseline;*/
-  /*flex-wrap:wrap;*/
-  /*align-content: flex-end;*/
-  /* gap: 1e,;*/
-  /* gap: 1em; */
-}
+
