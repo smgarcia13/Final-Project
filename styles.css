@@ -185,13 +185,14 @@ footer {
 .item {
   width: 500px;
   height: 400px;
-  background-color: #fb7185;
+  background-color: #4982a8;
   padding: 1em;
   font-weight: 700;
   color: var(--clr-light);
   text-align:left;
   border: 10px solid var(--clr-accent);
   border-radius: 10px;
+  gap: 100px;
 }
 .item 2 {
   width: 500px;
@@ -203,5 +204,29 @@ footer {
   text-align: center;
   border: 10px solid var(--clr-accent);
   border-radius: 10px;
+  gap: 100px;
 }
 
+.item 3{
+  width: 500px;
+  height: 400px;
+  background-color: #fb7185;
+  padding: 1em;
+  font-weight: 700;
+  color: var(--clr-light);
+  text-align: center;
+  border: 10px solid var(--clr-accent);
+  border-radius: 10px;
+  gap: 100px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row; /* Default, can be omitted */
+  gap: 100px;
+}
+
+.formcontainer {
+ display: flex;
+  gap: 20px; /* Adds 20px of space between all items (both rows and columns if wrapping) */
+}
