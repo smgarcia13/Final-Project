@@ -9,6 +9,7 @@ body {
   background-color: #e2e2e2;
   color: #222;
   line-height: 1.6;
+ 
 }
 
 
@@ -84,8 +85,11 @@ main {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* About images */
+/* About */
 
+.about {
+  background-image: url("https://images.rbxcdn.com/28ab48fcd5d5b19b03c126d2b6aef4b8.jpg");
+}
 .about-images {
   margin-top: 1rem;
   display: flex;
@@ -93,7 +97,7 @@ main {
   flex-wrap: wrap;
 }
 
-.about-images img {
+.about-images {
   width: px;
   height: px;
   object-fit: cover;
@@ -185,7 +189,7 @@ footer {
 .item {
   width: 500px;
   height: 400px;
-  background-color: #4982a8;
+  background-color: #3a3a3a;
   padding: 1em;
   font-weight: 700;
   color: var(--clr-light);
@@ -197,7 +201,7 @@ footer {
 .item 2 {
   width: 500px;
   height: 400px;
-  background-color: #fb7185;
+  background-color:black;
   padding: 1em;
   font-weight: 700;
   color: var(--clr-light);
@@ -210,7 +214,7 @@ footer {
 .item 3{
   width: 500px;
   height: 400px;
-  background-color: #fb7185;
+  background-color: black;
   padding: 1em;
   font-weight: 700;
   color: var(--clr-light);
@@ -230,3 +234,7 @@ footer {
  display: flex;
   gap: 20px; /* Adds 20px of space between all items (both rows and columns if wrapping) */
 }
+
+
+
+
